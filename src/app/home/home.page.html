@@ -1,0 +1,253 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-title>
+
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+
+
+    <ion-card>
+        <img src="/assets/banner.jpg"><br>
+        <h1><b>Coffee App</b></h1>
+    </ion-card>
+
+
+    <ion-slides #slides>
+        <ion-slide>
+            <ion-card>
+                <table color="medium">
+                    <tr color="medium">
+                        <td color="medium">
+                            <img src="/assets/epress.jpg" style="width:50%;" style="height:55%;"><br>Espresso <br>
+
+
+
+                            <ion-icon name="add" (click)="price()"></ion-icon>
+
+                            <ion-label>{{minus}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price2()"></ion-icon>
+                            <p><b>Toppings</b></p>
+
+
+
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Cream </ion-label>
+
+                                <ion-radio (click)="cream()"> </ion-radio>
+
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate()" [(ngModel)]="Chocolate"></ion-radio>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Honey</ion-label>
+                                <ion-radio (click)="honey()"></ion-radio>
+
+
+                            </ion-item>
+
+
+                        </td>
+                        <td>
+                            <img src="/assets/ristretto.jpg" style="width:50%;" style="height:50%;"><br>Ristretto<br>
+                            <ion-icon name="add" (click)="price3()"></ion-icon>
+
+                            <ion-label>{{minus1}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price4()"></ion-icon>
+
+                            <p><b>Toppings</b></p>
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Cream</ion-label>
+                                <ion-radio (click)="cream2()"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate2()"></ion-radio>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Honey</ion-label>
+                                <ion-radio (click)="honey2()"></ion-radio>
+
+
+                            </ion-item>
+
+                        </td>
+                    </tr>
+                </table>
+            </ion-card>
+
+        </ion-slide>
+
+
+
+        <ion-slide>
+            <ion-card>
+                <table color="medium">
+                    <tr color="medium">
+                        <td color="medium">
+                            <img src="/assets/ame.jpg" style="width:50%;" style="height:50%;"><br>Americano<br>
+                            <ion-icon name="add" (click)="price5()"></ion-icon>
+
+                            <ion-label>{{minus2}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price6()"></ion-icon>
+
+
+
+                            <p><b>Toppings</b></p>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Cream </ion-label>
+                                <ion-radio (click)="cream3()"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate3()"></ion-radio>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Honey</ion-label>
+                                <ion-radio (click)="honey3()"></ion-radio>
+
+
+                            </ion-item>
+
+
+
+                        </td>
+                        <td>
+                            <img src="/assets/fw.jpg" style="width:50%;" style="height:50%;"><br>Flat White<br>
+                            <ion-icon name="add" (click)="price7()"></ion-icon>
+
+                            <ion-label>{{minus3}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price8()"></ion-icon>
+
+
+
+                            <p><b>Toppings</b></p>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Cream</ion-label>
+                                <ion-radio (click)="cream4()"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing:-1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate4()"></ion-radio>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Honey</ion-label>
+                                <ion-radio (click)="honey4()"></ion-radio>
+
+
+                            </ion-item>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="/assets/cupp.jpg" style="width:20%;" style="height:30%;"><br>Cappuccino<br>
+                            <ion-icon name="add" (click)="price9()"></ion-icon>
+
+                            <ion-label>{{minus4}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price10()"></ion-icon>
+
+                            <p><b>Toppings</b></p>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Cream</ion-label>
+                                <ion-radio (click)="cream5()"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate5()"></ion-radio>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Honey</ion-label>
+                                <ion-radio (click)="honey5()"></ion-radio>
+
+                            </ion-item>
+                        </td>
+                        <td>
+                            <img src="/assets/ll.jpg" style="width:50%;" style="height:30%;"><br>Latte<br>
+                            <ion-icon name="add" (click)="price11()"></ion-icon>
+
+                            <ion-label>{{minus5}}</ion-label>
+
+                            <ion-icon name="remove" (click)="price12()"></ion-icon>
+
+
+
+                            <p><b>Toppings</b></p>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Cream</ion-label>
+                                <ion-radio (click)="cream6()"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Chocolate</ion-label>
+                                <ion-radio (click)="chocolate6()"></ion-radio>
+
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label style="letter-spacing: -1px;">Honey</ion-label>
+                                <ion-radio (click)="honey6()"></ion-radio>
+
+
+                            </ion-item>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </ion-card>
+
+        </ion-slide>
+
+    </ion-slides>
+    <br>
+    <br>
+
+    <ion-label>
+
+    </ion-label>
+    <br>
+    <ion-label class="price">
+
+    </ion-label>
+    <p>Total Price:R{{totalprice}}</p>
+
+
+
+
+    <ion-button expand="full" color="danger" (click)="paymnt()">Payment</ion-button>
+
+
+
+    <!-- <ion-button (click)="paymnt()">Payment</ion-button> -->
+
+
+</ion-content>
